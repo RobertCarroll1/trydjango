@@ -28,8 +28,10 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     {% if user.is_authenticated %}
+                        <li><a href="/accounts/profile"><i class="fa fa-user"></i> Profile</a></li>
                         <li><a href="/accounts/logout"><i class="fa fa-sign-out"></i> Logout</a></li>
                     {%  else %}
+                        
                         <li><a href="/accounts/register"><i class="fa fa-sign-plus"></i> Register</a></li>
                         <li><a href="{% url 'Fred' %}"><i class="fa fa-sign-in"></i> Login</a></li>
                     {% endif %}

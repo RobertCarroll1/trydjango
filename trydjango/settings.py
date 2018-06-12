@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['trydjango-robertcarroll.c9users.io']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_forms_bootstrap',
     'home',
     'accounts',
 ]
